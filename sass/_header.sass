@@ -1,0 +1,105 @@
+.header
+	background: $color
+	z-index: 50
+	position: fixed
+	top: 0 
+	left: 0
+	width: 100%
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
+	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
+.nav__menu
+	padding: 0
+	margin: 0
+	+tablet
+		margin-top: 20px
+.header__block
+	display: flex
+	justify-content: space-around
+	align-items: center
+	padding: 20px 0 30px 0
+	+tablet
+		display: block
+.header__logo
+	display: flex
+	justify-content: space-around
+	font-size: rem(27px)
+	+tablet
+		text-align: center
+.header__menu
+	+tablet
+		display: none
+		clear: both
+		width: 100%
++tablet
+	.hamburger
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		background: transparent
+		width: 50px
+		height: 41px
+		padding: 0 8px
+		cursor: pointer
+		float: right
+	.hamburger .hamburger__line
+		background: #000
+		width: 100%
+		height: 2.5px
+		transition: .5s
+.dn
+	display: none
+	+tablet
+		display: inline-block
+		font-size: rem(32px)
+		list-style: none
+.logo__link
+	font-weight: bold
+	color: #000
+	transition: .5s
+	&:hover
+		color: #fff
+.menu__list
+	position: relative
+	display: inline-block
+	font-size: rem(14px)
+	text-transform: uppercase
+	list-style: none
+	padding: 0 10px
+	+tablet
+		padding: 20px 0
+		text-align: center
+		display: block
+		margin: 0 30px
+.list__link
+	font-weight: bold
+	color: #000
+	transition: .5s
+	&:hover
+		color: #fff
+	+tablet
+		border-bottom: 2px solid #000
+		padding: 20px
+.port__lang
+	color: #000
+	font-weight: bold
+	display: none
+	position: absolute
+	top: -20px
+	left: 40px
+	padding: 20px
+	background: #fff
+.display:hover .port__lang
+	display: inline-block
+.display
+	+tablet
+		display: none
+.bn
+	+tablet
+		border-bottom: none
+.open
+.displaynone
+	display: none
+.rotated2
+	transform: rotate(45deg) translateY(14.5px)
+.rotated-
+	transform: rotate(-45deg) translateY(-14.5px)
