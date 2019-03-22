@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 html, body {
   scroll-behavior: smooth;
@@ -36,9 +38,7 @@ div.container {
 
 button.btn {
   cursor: pointer;
-  border: 1px solid inherit;
   background: transparent;
-  color: inherit;
   padding: 1em 2em;
   font-weight: bold;
   border-radius: 3em;
@@ -112,11 +112,13 @@ header.page-header {
     header.page-header div.slogan p {
       margin-bottom: 1.5em;
       font-size: 0.8em; }
-    header.page-header div.slogan button:hover {
-      background: white;
-      color: black;
-      border-color: white;
-      text-shadow: none; }
+    header.page-header div.slogan button {
+      border: 1px solid white; }
+      header.page-header div.slogan button:hover {
+        background: white;
+        color: black;
+        border-color: white;
+        text-shadow: none; }
 
 @media screen and (max-width: 992px) {
   header.page-header {
