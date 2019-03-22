@@ -1,77 +1,156 @@
-/*
-Error: Undefined variable: "$color".
-        on line 2 of sass/_header.sass
-        from line 1 of sass/main.sass
+* {
+  box-sizing: border-box; }
 
-1: @import 'header'
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
 
-Backtrace:
-sass/_header.sass:2
-sass/main.sass:1
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$color\".\A         on line 2 of sass/_header.sass\A         from line 1 of sass/main.sass\A \A 1: @import 'header'"; }
+body {
+  color: #fff;
+  background: #000;
+  font: 1rem/1.32 "exo2", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "exo2"; }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+.wrapper {
+  position: relative;
+  max-width: 1080px;
+  min-width: 300px;
+  margin: 0 auto; }
+
+.header {
+  background: #ff3939;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0); }
+
+.nav__menu {
+  padding: 0;
+  margin: 0; }
+  @media screen and (max-width: 768px) {
+    .nav__menu {
+      margin-top: 20px; } }
+
+.header__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 30px 0; }
+  @media screen and (max-width: 768px) {
+    .header__block {
+      display: block; } }
+
+.header__logo {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6875rem; }
+  @media screen and (max-width: 768px) {
+    .header__logo {
+      text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+    clear: both;
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    width: 50px;
+    height: 41px;
+    padding: 0 8px;
+    cursor: pointer;
+    float: right; }
+
+  .hamburger .hamburger__line {
+    background: #000;
+    width: 100%;
+    height: 2.5px;
+    transition: 0.5s; } }
+.dn {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .dn {
+      display: inline-block;
+      font-size: 2rem;
+      list-style: none; } }
+
+.logo__link {
+  font-weight: bold;
+  color: #000;
+  transition: 0.5s; }
+  .logo__link:hover {
+    color: #fff; }
+
+.menu__list {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0 10px; }
+  @media screen and (max-width: 768px) {
+    .menu__list {
+      padding: 20px 0;
+      text-align: center;
+      display: block;
+      margin: 0 30px; } }
+
+.list__link {
+  font-weight: bold;
+  color: #000;
+  transition: 0.5s; }
+  .list__link:hover {
+    color: #fff; }
+  @media screen and (max-width: 768px) {
+    .list__link {
+      border-bottom: 2px solid #000;
+      padding: 20px; } }
+
+.port__lang {
+  color: #000;
+  font-weight: bold;
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  padding: 20px;
+  background: #fff; }
+
+.display:hover .port__lang {
+  display: inline-block; }
+
+@media screen and (max-width: 768px) {
+  .display {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .bn {
+    border-bottom: none; } }
+
+.displaynone {
+  display: none; }
+
+.rotated2 {
+  transform: rotate(45deg) translateY(14.5px); }
+
+.rotated- {
+  transform: rotate(-45deg) translateY(-14.5px); }
+
+/*# sourceMappingURL=main.css.map */
