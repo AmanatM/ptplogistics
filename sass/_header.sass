@@ -1,105 +1,175 @@
-.header
-	background: $color
-	z-index: 50
-	position: fixed
-	top: 0 
-	left: 0
-	width: 100%
-	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
-	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 70% 100%, 30% 100%, 0 75%, 0 0)
-.nav__menu
-	padding: 0
-	margin: 0
-	+tablet
-		margin-top: 20px
-.header__block
-	display: flex
-	justify-content: space-around
-	align-items: center
-	padding: 20px 0 30px 0
-	+tablet
-		display: block
-.header__logo
-	display: flex
-	justify-content: space-around
-	font-size: rem(27px)
-	+tablet
+header.page-header 
+	height: 100vh
+	background: url('../files/imgs/header-bg.jpg') no-repeat 50% 55%
+	background-size: 140%
+	color: white
+
+	nav
+		background: rgba(0, 0, 0, .3)
+		padding: rem(10px) 0
+		color: white
+		font-size: .9em
+
+		div.container 
+			display: flex
+			align-items: center
+
+
+		.toogle-btn 
+			display: none
+
+		ul 
+			display: flex
+			align-items: center
+
+
+		a.header-menu-item 
+			margin: 0 1.5em
+
+
+		a.header-menu-item:after 
+			content: ''
+			display: block
+			width: 100%
+			height: 1px
+			background: white
+			transform: scaleX(0)
+			transition: all .2s
+
+
+		a.header-menu-item:hover:after 
+			transition: all .2s
+			transform: scaleX(1)
+
+
+		li 
+			list-style: none
+
+
+		a.header-menu-item:first-child 
+			margin-left: 0
+
+
+		a.logo 
+			margin-right: auto
+			font-size: 1.1em
+			font-weight: bold
+
+
+
+	div.slogan 
 		text-align: center
-.header__menu
-	+tablet
-		display: none
-		clear: both
-		width: 100%
-+tablet
-	.hamburger
-		display: flex
-		flex-direction: column
-		justify-content: space-around
-		background: transparent
-		width: 50px
-		height: 41px
-		padding: 0 8px
-		cursor: pointer
-		float: right
-	.hamburger .hamburger__line
-		background: #000
-		width: 100%
-		height: 2.5px
-		transition: .5s
-.dn
-	display: none
-	+tablet
-		display: inline-block
-		font-size: rem(32px)
-		list-style: none
-.logo__link
-	font-weight: bold
-	color: #000
-	transition: .5s
-	&:hover
-		color: #fff
-.menu__list
-	position: relative
-	display: inline-block
-	font-size: rem(14px)
-	text-transform: uppercase
-	list-style: none
-	padding: 0 10px
-	+tablet
-		padding: 20px 0
-		text-align: center
-		display: block
-		margin: 0 30px
-.list__link
-	font-weight: bold
-	color: #000
-	transition: .5s
-	&:hover
-		color: #fff
-	+tablet
-		border-bottom: 2px solid #000
-		padding: 20px
-.port__lang
-	color: #000
-	font-weight: bold
-	display: none
-	position: absolute
-	top: -20px
-	left: 40px
-	padding: 20px
-	background: #fff
-.display:hover .port__lang
-	display: inline-block
-.display
-	+tablet
-		display: none
-.bn
-	+tablet
-		border-bottom: none
-.open
-.displaynone
-	display: none
-.rotated2
-	transform: rotate(45deg) translateY(14.5px)
-.rotated-
-	transform: rotate(-45deg) translateY(-14.5px)
+		margin-top: 35vh
+
+
+		h1 
+			margin-bottom: .5em
+			text-shadow: 0px 0px 2px black
+			font-family: serif
+
+
+		p 
+			margin-bottom: 1.5em
+			font-size: .8em
+
+
+		button:hover 
+			background: white
+			color: black
+			border-color: white
+			text-shadow: none
+
++l 	
+		/*HEADER*/
+
+	header.page-header 
+		background-size: cover
+
+		ul.header-menu 
+			display: none
+		
+
+		nav
+	
+
+		div.toogle-btn 
+			display: flex
+			flex-direction: column
+			width: 35px
+			justify-content: space-between
+			height: 20px
+			cursor: pointer
+			margin-left: auto
+			z-index: 999999
+			transition: all .3s
+			background: transparent
+	
+
+		div.toogle-btn.active 
+			transition: all .4s
+		
+
+		div.toogle-btn.active div:first-child 
+			width: 50%
+			transform: rotate(45deg) translate(3px)
+	
+
+		div.toogle-btn.active div:nth-child(2n) 
+			transform: rotate(-45deg)
+		
+
+		div.toogle-btn.active div:last-child 
+			width: 50%
+			transform: translate(15px, -3px) rotate(45deg)
+		
+
+		div.toogle-btn:hover div 
+			filter: drop-shadow(0px 0px 10px rgba(103, 58, 183, 1))
+			background-color: white
+			transition: all .4s
+	
+
+		div.toogle-btn div 
+			transition: all .3s
+			width: 100%
+			height: 2px
+			background: white
+	
+
+		+keyframes(menu_appear)
+			from 
+				transform: translateY(-100%)
+			to 
+				transform: translateY(0)
+			
+	
+
+		ul.header-menu.mobile-active 
+			display: flex
+			flex-direction: column
+			position: absolute
+			top: 0
+			right: 0
+			width: 100%
+			background: rgba(0, 0, 0, .8)
+			font-size: 1.2em
+			justify-content: center
+			animation: menu_appear .4s
+			padding: .5em 0
+	
+
+		ul.header-menu a.nav-logo 
+			font-size: 2.4em
+			display: none
+		
+
+		ul.header-menu.mobile-active li 
+			margin: .6em 0
+		
+
+		ul.header-menu.mobile-active * 
+			margin: 0
+		
+
+
+

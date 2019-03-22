@@ -1,17 +1,17 @@
 @function rem($px)
 	@return $px / 16px + 0rem
 
-=phone
-	@media screen and (max-width: $phone)
+=s
+	@media screen and (max-width: $s)
 		@content
-=tablet
-	@media screen and (max-width: $tablet)
+=m
+	@media screen and (max-width: $m)
 		@content
-=laptop
-	@media screen and (max-width: $laptop)
+=l
+	@media screen and (max-width: $l)
 		@content
-=desktop
-	@media screen and (max-width: $desktop)
+=xl
+	@media screen and (max-width: $xl)
 		@content
 
 =keyframes($name)
