@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s; }
+
 html, body {
   scroll-behavior: smooth;
   margin: 0;
@@ -22,24 +28,12 @@ a:hover {
 
 div.container {
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.wrapper {
-  position: relative;
   max-width: 1080px;
-  min-width: 300px;
   margin: 0 auto; }
 
 button.btn {
   cursor: pointer;
-  background: transparent;
-  padding: 1em 2em;
-  font-weight: bold;
-  border-radius: 3em;
-  transition: all 0.2s;
-  font-size: 0.8em;
-  text-shadow: 0px 0px 2px black; }
+  font-weight: bold; }
 
 span.accent {
   color: #009688; }
@@ -51,143 +45,10 @@ h2.section-heading {
 
 p.section-subheading {
   font-family: "Arial";
-  font-size: 0.8em;
   text-align: center;
   margin-bottom: 6em; }
 
 section {
   padding: 4em 0; }
-
-header.page-header {
-  height: 100vh;
-  background: url("../files/imgs/header-bg.jpg") no-repeat 50% 55%;
-  background-size: 140%;
-  color: white; }
-  header.page-header nav {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 0.625rem 0;
-    color: white;
-    font-size: 0.9em; }
-    header.page-header nav div.container {
-      display: flex;
-      align-items: center; }
-    header.page-header nav .toogle-btn {
-      display: none; }
-    header.page-header nav ul {
-      display: flex;
-      align-items: center; }
-    header.page-header nav a.header-menu-item {
-      margin: 0 1.5em; }
-    header.page-header nav a.header-menu-item:after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background: white;
-      transform: scaleX(0);
-      transition: all 0.2s; }
-    header.page-header nav a.header-menu-item:hover:after {
-      transition: all 0.2s;
-      transform: scaleX(1); }
-    header.page-header nav li {
-      list-style: none; }
-    header.page-header nav a.header-menu-item:first-child {
-      margin-left: 0; }
-    header.page-header nav a.logo {
-      margin-right: auto;
-      font-size: 1.1em;
-      font-weight: bold; }
-  header.page-header div.slogan {
-    text-align: center;
-    margin-top: 35vh; }
-    header.page-header div.slogan h1 {
-      margin-bottom: 0.5em;
-      text-shadow: 0px 0px 2px black;
-      font-family: serif; }
-    header.page-header div.slogan p {
-      margin-bottom: 1.5em;
-      font-size: 0.8em; }
-    header.page-header div.slogan button {
-      border: 1px solid white; }
-      header.page-header div.slogan button:hover {
-        background: white;
-        color: black;
-        border-color: white;
-        text-shadow: none; }
-
-@media screen and (max-width: 992px) {
-  header.page-header {
-    background-size: cover; }
-    header.page-header ul.header-menu {
-      display: none; }
-    header.page-header div.toogle-btn {
-      display: flex;
-      flex-direction: column;
-      width: 35px;
-      justify-content: space-between;
-      height: 20px;
-      cursor: pointer;
-      margin-left: auto;
-      z-index: 999999;
-      transition: all 0.3s;
-      background: transparent; }
-    header.page-header div.toogle-btn.active {
-      transition: all 0.4s; }
-    header.page-header div.toogle-btn.active div:first-child {
-      width: 50%;
-      transform: rotate(45deg) translate(3px); }
-    header.page-header div.toogle-btn.active div:nth-child(2n) {
-      transform: rotate(-45deg); }
-    header.page-header div.toogle-btn.active div:last-child {
-      width: 50%;
-      transform: translate(15px, -3px) rotate(45deg); }
-    header.page-header div.toogle-btn:hover div {
-      filter: drop-shadow(0px 0px 10px #673ab7);
-      background-color: white;
-      transition: all 0.4s; }
-    header.page-header div.toogle-btn div {
-      transition: all 0.3s;
-      width: 100%;
-      height: 2px;
-      background: white; }
-  @-webkit-keyframes menu_appear {
-    from {
-      transform: translateY(-100%); }
-    to {
-      transform: translateY(0); } }
-  @-moz-keyframes menu_appear {
-    from {
-      transform: translateY(-100%); }
-    to {
-      transform: translateY(0); } }
-  @-ms-keyframes menu_appear {
-    from {
-      transform: translateY(-100%); }
-    to {
-      transform: translateY(0); } }
-  @keyframes menu_appear {
-    from {
-      transform: translateY(-100%); }
-    to {
-      transform: translateY(0); } }
-    header.page-header ul.header-menu.mobile-active {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      font-size: 1.2em;
-      justify-content: center;
-      animation: menu_appear 0.4s;
-      padding: 0.5em 0; }
-    header.page-header ul.header-menu a.nav-logo {
-      font-size: 2.4em;
-      display: none; }
-    header.page-header ul.header-menu.mobile-active li {
-      margin: 0.6em 0; }
-    header.page-header ul.header-menu.mobile-active * {
-      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
