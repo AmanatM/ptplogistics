@@ -2,7 +2,7 @@
 	box-sizing: border-box
 	margin: 0 
 	padding: 0
-	transition: all .2s
+	transition: all .3s
 	
 html, body
 	scroll-behavior: smooth
@@ -34,13 +34,19 @@ div.container
 
 
 
-button.btn 
+.shadow-block
+	display: block
 	cursor: pointer
-	font-weight: bold
+	box-shadow: 5px 5px 30px 0 rgba(46,61,73,.2)	
+	border-radius: rem(10px)
+	background: white
 
 
-span.accent 
-	color: $green-blue
+
+
+.accent-color
+	color: $text-blue !important
+	text-transform: uppercase !important
 
 
 h2.section-heading 
@@ -54,7 +60,5 @@ p.section-subheading
 	text-align: center
 	margin-bottom: 6em
 
-section 
-	padding: 4em 0
 
 		

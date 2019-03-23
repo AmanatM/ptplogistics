@@ -1,0 +1,76 @@
+header
+	display: flex
+	min-height: 100vh
+
+	.main-content
+		flex: 1 1 40%
+		background:  $light-blue url('../files/imgs/truck.png') no-repeat
+		background-size: 90%
+		background-position: 50% 70%
+
+	.choice-blocks 
+		flex: 1 1 60%
+		background: $light-blue
+		color: $text-black
+		display: flex
+
+		h3
+			margin-bottom: rem(16px)
+
+		p
+			font-size: .9em
+			line-height: 1.5em
+
+		.blocks
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			margin: auto
+			flex-wrap: wrap
+
+			.block 
+				background: white
+				margin: 0 auto
+				width: 90%
+				padding: rem(25px)
+				padding-bottom: 0
+				display: flex
+				flex-direction: column
+				position: relative
+				flex: 1 1 46%
+				margin: 5% 2%
+
+
+				&:hover 
+					box-shadow: 2px 2px 10px 0 rgba(46,61,73,.2)	
+
+
+				.tag
+					position: absolute
+					top: rem(25px)
+					right: rem(25px)
+					color: $text-purple
+					padding: 8px 15px
+					border-radius: rem(5px)
+
+				.top
+					border-bottom: 1px solid #dbe2e8
+					padding-bottom: rem(25px)
+					display: flex
+
+					.left	
+						flex: 0 1 25%
+						min-width: 120px
+						margin-right: rem(25px)
+
+						img
+							border-radius: rem(10px)
+							box-shadow: 1px 1px 7px #bcc9d4
+							width: 100%
+
+
+
+
+				.bottom
+					padding: rem(10px) 0
+
