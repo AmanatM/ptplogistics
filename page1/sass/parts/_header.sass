@@ -1,0 +1,73 @@
+.header
+	height: 20vh
+	background: #fff
+	display: flex
+	align-items: center
+	text-align: center
+.head
+	z-index: 1
+	position: relative
+	font-weight: bold
+	color: #fff
+	text-transform: uppercase
+	background: url(../img/doc.jpg) 0 0 no-repeat
+	background-size: cover
+	height: 80vh
+	display: flex
+	align-items: center
+	text-align: center
+	&::after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 80vh
+		background: #000
+		opacity: .5
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 0
+.logo_link
+	background: #fff
+	font-size: rem(32px)
+.border.wd
+	width: 16%
+.head_hg
+	font-size: rem(50px)
+	margin: 0 auto rem(40px)
+	width: 70%
+.head_txt
+	font-size: rem(22px)
+	margin-bottom: rem(60px)
+.head_link
+	z-index: 1
+	position: relative
+	color: #000
+	background: #02b3e4
+	padding: 20px 60px
+	border-radius: 30px
+	&:active
+		background-color: #02b3e4
+		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
+.link_ping
+	z-index: -1
+	position: absolute
+	top: -17.5px
+	left: -21px
+	background: #02b3e4
+	display: inline-block
+	border-radius: 30px
+	height: 90px
+	width: 115%
+.ping
+	animation: ping 0.8s ease-in-out infinite both
++keyframes(ping) 
+	0% 
+		transform: scale(0.2)
+		opacity: 0.8
+	80% 
+		transform: scale(1.2)
+		opacity: 0
+	100% 
+		transform: scale(2.2)
+		opacity: 0

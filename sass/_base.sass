@@ -12,15 +12,19 @@ html, body
 	height: 100%
 
 body 
-	font-family: 'Arial', sans-serif
+	font-family: $font, sans-serif
 	font-size: 1em
 
 h1, h2, h3, h4, h5, h6
-	font-family: $font
+	font-family: $font, sans-serif
+
 a
 	outline: none
 	text-decoration: none
 	color: inherit
+
+li 	
+	list-style: none
 
 
 a:hover 
@@ -32,33 +36,8 @@ div.container
 	max-width: $width
 	margin: 0 auto
 
-
-
-.shadow-block
-	display: block
-	cursor: pointer
-	box-shadow: 5px 5px 30px 0 rgba(46,61,73,.2)	
-	border-radius: rem(10px)
-	background: white
-
-
-
-
-.accent-color
-	color: $text-blue !important
-	text-transform: uppercase !important
-
-
-h2.section-heading 
-	font-family: serif
-	text-align: center
-	margin-bottom: .5em
-
-
-p.section-subheading 
-	font-family: 'Arial'
-	text-align: center
-	margin-bottom: 6em
+h3.heading
+	font-weight: normal
 
 
 		
