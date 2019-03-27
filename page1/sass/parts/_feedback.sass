@@ -1,0 +1,65 @@
+.feedback
+	z-index: 1
+	position: relative
+	padding: 70px 5%
+	background: url(../img/pic4.jpg) 0 0 no-repeat fixed
+	background-size: cover
+	&::after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 100%
+		background: #000
+		opacity: .5
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+.feedback__heading
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+	margin-bottom: 30px
+.feedback__txt
+	color: #fff
+	text-align: center
+	font-size: rem(18px)
+	margin-bottom: 30px
+.form__box
+	text-align: center
+.form__row
+	position: relative
+.user
+	border-radius: 9px
+	border: solid 2px yellow
+	color: #000
+	width: 70%
+	padding: 12px
+	margin-bottom: 10px
+	outline: none
+.user__label
+	position: absolute
+	top: 15px
+	left: 25%
+	transform: translateX(-70%)
+.form__submit
+	display: block
+	font-weight: bold
+	margin: 0 auto
+	text-transform: uppercase
+	border: none
+	padding: 20px 40px
+	border-radius: 30px
+	background: yellow
+	outline: none
+	&:active
+		background-color: yellow
+		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
+.textarea
+	width: 70%
+	margin-bottom: 20px
+	padding: 12px
+	color: #000
+	outline: none
+	border-radius: 9px
+	border: solid 2px yellow
