@@ -1,0 +1,102 @@
+section.about
+	padding: rem(50px) 0
+	padding: 4em 0
+	position: relative
+
+	div.bg-circle
+		position: absolute
+		width: 400px
+		height: 400px
+		background: transparent
+		border-radius: 50%
+		z-index: -1
+
+		&.top
+			width: 400px
+			height: 400px
+			border: 60px solid #E5C649 //yellow
+			top: 20%
+			left: -250px
+
+		&.bottom 
+
+			width: 500px
+			height: 500px
+			border: 55px solid #049588 //green
+			bottom: 30%
+			right: -360px
+
+
+
+
+	div.content
+		margin-top: rem(50px)
+		background: url('../files/imgs/icons/truck-icon.svg'), url('../files/imgs/icons/road_texture.png')
+		background-position: 15% 30%, 15% 30%
+		background-attachment: fixed, scroll
+		background-repeat: no-repeat, repeat-y
+		background-size: rem(150px), rem(150px)
+		padding-top: rem(80px)
+		padding-left: 35%
+		padding-bottom: rem(400px)
+
+		div.about-us-block
+			margin-right: 15%
+			font-size: 1.5em
+			line-height: 1.6em
+			color: white
+			background: #151515 //black
+			padding: rem(60px) rem(50px)
+			border-radius: 8px
+			font-weight: bold
+			margin-bottom: rem(100px)
+
+			.accent
+
+				&.red
+					color: #E64C3C //red
+				&.yellow
+					color: #E5C649 //yellow
+				&.green
+					color: #01AA9B //green
+
+		div.features
+			display: flex
+			flex-direction: column
+
+			h2 
+				margin-bottom: rem(30px)
+				margin-top: rem(40px)
+
+			.feature-item
+				display: flex
+				margin: rem(30px) 0
+				align-content: center
+
+				.left 
+					width: 100px
+					margin-right: rem(20px)
+
+					img 
+						width: 100%
+
+				.right 
+
+					display: flex
+					flex-direction: column
+					justify-content: center
+
+					.heading
+						font-weight: bold
+						font-size: 1.2em
+						margin-bottom: rem(10px)
+
+					.feature-info
+						color: #6F6F6F
+
+
+
+
+
+
+
