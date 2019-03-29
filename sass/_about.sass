@@ -18,13 +18,20 @@ section.about
 			top: 20%
 			left: -250px
 
+			+m 
+				left: -300px
+
 		&.bottom 
 
 			width: 500px
 			height: 500px
 			border: 55px solid #049588 //green
-			bottom: 30%
+			bottom: 10%
 			right: -360px
+
+			+m 
+				bottom: 10%
+				right: -450px
 
 
 
@@ -38,7 +45,12 @@ section.about
 		background-size: rem(150px), rem(150px)
 		padding-top: rem(80px)
 		padding-left: 35%
-		padding-bottom: rem(400px)
+		padding-bottom: rem(100px)
+
+		+m 	
+			background-position: -45px 30%, -48px 0%
+			background-size: rem(100px)
+			padding-left: 17%
 
 		div.about-us-block
 			margin-right: 15%
@@ -50,6 +62,13 @@ section.about
 			border-radius: 8px
 			font-weight: bold
 			margin-bottom: rem(100px)
+
+			+l 
+				margin-right: 0
+
+			+m
+				font-size: 1.1em
+				padding: rem(20px) rem(15px)
 
 			.accent
 
@@ -72,6 +91,7 @@ section.about
 				display: flex
 				margin: rem(30px) 0
 				align-content: center
+				cursor: pointer
 
 				.left 
 					width: 100px
