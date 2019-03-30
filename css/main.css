@@ -259,6 +259,8 @@ section.reviews {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
+      section.reviews .review-items .review-item:hover {
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2); }
       @media screen and (max-width: 992px) {
         section.reviews .review-items .review-item {
           padding: 1.25rem; } }
@@ -283,5 +285,58 @@ section.reviews {
           background-size: cover; }
         section.reviews .review-items .review-item .author-info small {
           color: #838383; }
+
+section.action {
+  background-color: #049588;
+  color: white;
+  height: 30vh; }
+
+footer {
+  background-color: #F9F9F9;
+  color: #838383; }
+  footer div.footer-columns {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 768px) {
+      footer div.footer-columns {
+        flex-wrap: wrap; } }
+    @media screen and (max-width: 768px) {
+      footer div.footer-columns .col {
+        flex: 1 1 100%;
+        margin-bottom: 2.8125rem;
+        text-align: center; }
+        footer div.footer-columns .col:last-child {
+          margin-bottom: 0; } }
+    footer div.footer-columns .col h3 {
+      color: #707070;
+      margin-bottom: 2.5rem; }
+      @media screen and (max-width: 768px) {
+        footer div.footer-columns .col h3 {
+          margin-bottom: 1.25rem; } }
+    footer div.footer-columns .col ul li {
+      margin: 0.9375rem 0;
+      margin-left: 0.625rem;
+      text-transform: lowercase; }
+    footer div.footer-columns .col-3 li img {
+      width: 20px;
+      vertical-align: -4px;
+      margin-right: 0.625rem; }
+  footer div.citrus {
+    display: flex;
+    background-color: white;
+    color: #6F6F6F;
+    padding: 0.9375rem;
+    justify-content: center;
+    align-items: center; }
+    footer div.citrus p {
+      margin-right: 1.25rem; }
+    footer div.citrus div.citrus-logo {
+      display: flex;
+      align-items: center; }
+      footer div.citrus div.citrus-logo img {
+        width: 35px;
+        height: 35px;
+        margin-right: 0.3125rem; }
 
 /*# sourceMappingURL=main.css.map */
