@@ -1,38 +1,42 @@
 .header
-	height: 20vh
+	height: 100vh
 	background: #fff
 	display: flex
 	align-items: center
-	text-align: center
-.head
-	z-index: 1
-	position: relative
-	font-weight: bold
-	color: #fff
-	text-transform: uppercase
-	background: url(../img/doc.jpg) 0 0 no-repeat fixed
-	background-size: cover
-	height: 80vh
-	display: flex
-	align-items: center
-	text-align: center
-	&::after
-		content: ""
-		display: inline-block
-		width: 100%
-		height: 80vh
-		background: #000
-		opacity: .5
-		z-index: -1
-		position: absolute
-		top: 0
-		left: 0
+	text-align: left
+	overflow: hidden
+.tape
+	width: 70px
+	height: 100%
+	background: linear-gradient(45deg, black 0, black 11%, yellow 11%, yellow 21%, black 21%, black 31%, yellow 31%, yellow 41%, black 41%, black 51%, yellow 51%, yellow 61%, black 61%, black 71%, yellow 71%, yellow 81%, black 81%, black 91%, yellow 91%, yellow 100%)
+	position: fixed
+	top: 0
+	right: 0
+	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
+	transition: none
+	z-index: 5
+.right
+	position: fixed
+	top: 0
+	right: 140px
+.triangle
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 50px 50px 50px 0
+	border-color: transparent #000000 transparent transparent
+	position: absolute
+	top: 50%
+	right: 70px
+	transform: translateY(-50%)
+	cursor: pointer
+.logo
+	margin-bottom: rem(100px)
 .logo_link
-	background: #fff
 	font-size: rem(32px)
 .head_hg
 	font-size: rem(50px)
-	margin: 0 auto rem(40px)
+	margin-bottom: rem(40px)
 	width: 70%
 .head_txt
 	font-size: rem(22px)
@@ -69,3 +73,24 @@
 	100% 
 		transform: scale(2.2)
 		opacity: 0
+.tape_menu
+	display: none
+	width: 140px
+	height: 100%
+	background: #000
+	position: absolute
+	top: 0
+	right: 0
+	position: fixed
+.tape_bar
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.tape_list
+	padding: 30px 0
+.tape_link
+	color: #fff
+.open
+	display: inline-block
