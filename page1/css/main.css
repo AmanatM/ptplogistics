@@ -85,6 +85,11 @@ h3.heading {
 .logo_link {
   font-size: 2rem; }
 
+.logo_img {
+  width: 20%;
+  height: 20%;
+  object-fit: cover; }
+
 .head_hg {
   font-size: 3.125rem;
   margin-bottom: 2.5rem;
@@ -383,5 +388,10 @@ h3.heading {
 
 .tal {
   text-align: left; }
+
+.item_img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */
