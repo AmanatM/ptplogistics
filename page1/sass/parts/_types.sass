@@ -1,7 +1,14 @@
+.types
+	background: #759ce1
 .types_block
 	display: flex
 	justify-content: space-between
+	padding-bottom: 410px
+	border-bottom: 2px solid yellow
+	position: relative
 .types_item
+	background: #fff
+	position: relative
 	transition: .5s
 	border-radius: 9px
 	border: 1px solid yellow
@@ -14,6 +21,10 @@
 	&:hover
 		transform: translateY(2px)
 		box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75)
+	&:hover .price_item
+		transform: translateY(60%)
+		opacity: 1
+		position: fixed
 .types_img
 	width: 60%
 	height: 60%
@@ -26,24 +37,17 @@
 	display: flex
 	justify-content: space-between
 .price_item
-	position: relative
+	opacity: 0
+	background: #fff
+	position: absolute
+	top: 0
+	left: 0
 	border-radius: 9px
-	width: 23%
-	padding: 20px 20px 40px 20px
+	width: 100%
+	padding: 50px 50px 70px 50px
 	border: 1px solid yellow
 	text-align: center
 	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
-	&:after
-		content: ''
-		position: absolute
-		top: 0
-		left: 50%
-		width: 0
-		height: 0
-		transform: translate(-50%,-100%)
-		border-style: solid
-		border-width: 0 25px 25px 25px
-		border-color: transparent transparent yellow transparent
 .price_hg
 	font-size: rem(42px)
 .price_txt
@@ -57,3 +61,12 @@
 	padding: 15px
 	background: yellow
 	border-radius: 9px
+	&:active
+		background-color: yellow
+		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
+.click
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	margin-bottom: 10px
