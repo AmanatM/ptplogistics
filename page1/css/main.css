@@ -45,7 +45,7 @@ h3.heading {
 
 .header {
   height: 100vh;
-  background: #759ce1;
+  background: #fff;
   display: flex;
   align-items: center;
   text-align: left;
@@ -186,7 +186,7 @@ h3.heading {
   display: inline-block; }
 
 .types {
-  background: #759ce1; }
+  background: #fff; }
 
 .types_block {
   display: flex;
@@ -211,9 +211,7 @@ h3.heading {
     transform: translateY(2px);
     box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75); }
   .types_item:hover .price_item {
-    transform: translateY(60%);
-    opacity: 1;
-    position: fixed; }
+    transform: translateY(55%); }
 
 .types_img {
   width: 60%;
@@ -231,7 +229,7 @@ h3.heading {
   justify-content: space-between; }
 
 .price_item {
-  opacity: 0;
+  transform: translateY(40%);
   background: #fff;
   position: absolute;
   top: 0;
@@ -271,7 +269,7 @@ h3.heading {
   margin-bottom: 10px; }
 
 .info {
-  background: #759ce1;
+  background: #fff;
   padding: 70px 4%;
   display: flex;
   justify-content: space-between;
@@ -290,13 +288,13 @@ h3.heading {
 
 .info_block {
   width: 48%;
-  background: #759ce1; }
+  background: #fff; }
 
 .info_hg {
   margin-bottom: 30px; }
 
 .slides {
-  background: #759ce1;
+  background: #fff;
   padding: 0 4% 70px 4%; }
 
 .slide_block {
@@ -324,13 +322,13 @@ h3.heading {
   height: 40%; }
 
 .slide_head {
-  background: #759ce1;
+  background: #fff;
   padding: 5px;
   margin-bottom: 30px; }
 
 .feedback {
   padding: 0 4% 70px 4%;
-  background: #759ce1; }
+  background: #fff; }
 
 .form {
   display: flex;
