@@ -1,6 +1,30 @@
 section.action
-	background-color: #049588 //green
 	color: white
-	height: 30vh
+	padding: rem(60px)
+	position: relative
 
-	
+
+	background:  url('../files/imgs/icons/truck-icon.svg'), url('../files/imgs/icons/road_texture.png')
+	background-color: #049588 //green
+	background-position: 15% 30%, 15% 30%
+	background-attachment: fixed, scroll
+	background-repeat: no-repeat, repeat-y
+	background-size: rem(150px), rem(150px)
+
+	+m 	
+		background-position: -45px 30%, -48px 0%
+		background-size: rem(100px)
+
+	h2
+		text-align: center
+		cursor: pointer
+
+		+l 
+			margin-left: 25%
+
+		+m 	
+			margin-left: 0
+
+		&.title
+			margin-bottom: rem(30px)
+

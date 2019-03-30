@@ -287,9 +287,30 @@ section.reviews {
           color: #838383; }
 
 section.action {
-  background-color: #049588;
   color: white;
-  height: 30vh; }
+  padding: 3.75rem;
+  position: relative;
+  background: url("../files/imgs/icons/truck-icon.svg"), url("../files/imgs/icons/road_texture.png");
+  background-color: #049588;
+  background-position: 15% 30%, 15% 30%;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat-y;
+  background-size: 9.375rem, 9.375rem; }
+  @media screen and (max-width: 768px) {
+    section.action {
+      background-position: -45px 30%, -48px 0%;
+      background-size: 6.25rem; } }
+  section.action h2 {
+    text-align: center;
+    cursor: pointer; }
+    @media screen and (max-width: 992px) {
+      section.action h2 {
+        margin-left: 25%; } }
+    @media screen and (max-width: 768px) {
+      section.action h2 {
+        margin-left: 0; } }
+    section.action h2.title {
+      margin-bottom: 1.875rem; }
 
 footer {
   background-color: #F9F9F9;
