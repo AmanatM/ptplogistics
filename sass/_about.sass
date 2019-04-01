@@ -14,7 +14,7 @@ section.about
 		&.top
 			width: 400px
 			height: 400px
-			border: 60px solid #E5C649 //yellow
+			border: 60px solid #fdc300 //yellow
 			top: 20%
 			left: -250px
 
@@ -94,9 +94,39 @@ section.about
 				align-content: center
 				cursor: pointer
 
+
+				img 
+					position: relative
+
+					&.speed-arrow 
+						display: inline-block
+						width: 36px
+						height: 36px 
+						position: absolute
+						bottom: 10px
+						transform: rotate(-90deg)
+						transform-origin: 48% 50%
+
+					&.quality-anim
+						transform: scale(1)
+
+
+				+keyframes(flash)
+					0%
+						opacity: 0 
+					50% 
+						opacity: 1
+					100%
+						opacity: 0
+
+
+
+
+						
 				.left 
 					width: 100px
 					margin-right: rem(20px)
+					position: relative
 
 					img 
 						width: 100%
@@ -114,6 +144,16 @@ section.about
 
 					.feature-info
 						color: #6F6F6F
+
+				&:hover 
+					img 
+						&.speed-arrow 
+							transform: rotate(0)
+
+						&.flash-anim 
+							animation: flash .2s
+						&.quality-anim
+							transform: scale(1.1)
 
 
 
