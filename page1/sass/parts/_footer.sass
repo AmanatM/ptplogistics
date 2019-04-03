@@ -8,14 +8,25 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
+	+m
+		display: inline-block
 .footer_item
 	text-align: center
 	width: 30%
+	+m
+		width: 100%
 .item_link
 	font-size: rem(32px)
 .tal
 	text-align: left
+	+m
+		text-align: center
 .item_img
-	width: 50%
-	height: 50%
+	width: 60%
+	height: 60%
 	object-fit: cover
+	+m
+		width: 40%
+		height: 40%
+	+m
+		padding: 20px 0

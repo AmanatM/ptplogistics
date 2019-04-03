@@ -7,6 +7,13 @@
 	padding-bottom: 410px
 	border-bottom: 2px solid yellow
 	position: relative
+	+l
+		flex-wrap: wrap
+		padding-bottom: 310px
+	+m
+		padding-bottom: 250px
+	+s
+		padding-bottom: 370px
 .types_item
 	background: #fff
 	position: relative
@@ -24,11 +31,28 @@
 		box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75)
 	&:hover .price_item
 		transform: translateY(55%)
+	@media screen and (max-width: 1125px)
+		&:hover .price_item
+			transform: translateY(50%)
+	+l
+		width: 48%
+		&:hover .price_item
+			transform: translateY(40%)
+	+m
+		width: 100%
 .types_img
 	width: 60%
 	height: 60%
+	+m
+		width: 50%
+		height: 50%
+	+s
+		width: 65%
+		height: 65%
 .types_txt
 	margin-top: 30px
+	+m
+		display: none
 .types_hg
 	margin-bottom: 50px
 .price
@@ -47,6 +71,8 @@
 	border: 1px solid yellow
 	text-align: center
 	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
+	+m
+		height: auto
 .price_hg
 	font-size: rem(42px)
 .price_txt
@@ -73,3 +99,19 @@
 	left: 50%
 	transform: translateX(-50%)
 	margin-bottom: 10px
+.tt
+	+l
+		margin-top: 250px
+	+m
+		margin-top: 280px
+	+s
+		margin-top: 300px
+	@media screen and (max-width: 400px)
+		margin-top: 370px
+.ttaf
+	+m
+		margin-top: 280px
+	+s
+		margin-top: 300px
+	@media screen and (max-width: 400px)
+		margin-top: 370px

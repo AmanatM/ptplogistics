@@ -61,11 +61,19 @@ h3.heading {
   box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75);
   transition: none;
   z-index: 5; }
+  @media screen and (max-width: 768px) {
+    .tape {
+      width: 100%;
+      height: 70px; } }
 
 .right {
   position: fixed;
   top: 0;
   right: 140px; }
+  @media screen and (max-width: 768px) {
+    .right {
+      top: 340px;
+      right: 0; } }
 
 .triangle {
   width: 0;
@@ -78,9 +86,18 @@ h3.heading {
   right: 70px;
   transform: translateY(-50%);
   cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .triangle {
+      top: 70px;
+      left: 50%;
+      transform: translate(-50%, -25%) rotate(-90deg); } }
 
 .logo {
   margin-bottom: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      margin-top: 6.25rem;
+      margin-bottom: 3.125rem; } }
 
 .logo_link {
   font-size: 2rem; }
@@ -89,15 +106,29 @@ h3.heading {
   width: 20%;
   height: 20%;
   object-fit: cover; }
+  @media screen and (max-width: 480px) {
+    .logo_img {
+      width: 40%;
+      height: 40%; } }
 
 .head_hg {
   font-size: 3.125rem;
   margin-bottom: 2.5rem;
   width: 70%; }
+  @media screen and (max-width: 768px) {
+    .head_hg {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .head_hg {
+      font-size: 2rem;
+      width: 100%; } }
 
 .head_txt {
   font-size: 1.375rem;
   margin-bottom: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .head_txt {
+      font-size: 1.125rem; } }
 
 .head_link {
   z-index: 1;
@@ -172,7 +203,12 @@ h3.heading {
   position: absolute;
   top: 0;
   right: 0;
-  position: fixed; }
+  position: fixed;
+  z-index: 5; }
+  @media screen and (max-width: 768px) {
+    .tape_menu {
+      width: 100%;
+      height: 340px; } }
 
 .tape_bar {
   height: 100%;
@@ -183,6 +219,9 @@ h3.heading {
 
 .tape_list {
   padding: 30px 0; }
+  @media screen and (max-width: 768px) {
+    .tape_list {
+      padding: 15px 0; } }
 
 .tape_link {
   color: #fff; }
@@ -200,6 +239,16 @@ h3.heading {
   padding-bottom: 410px;
   border-bottom: 2px solid yellow;
   position: relative; }
+  @media screen and (max-width: 992px) {
+    .types_block {
+      flex-wrap: wrap;
+      padding-bottom: 310px; } }
+  @media screen and (max-width: 768px) {
+    .types_block {
+      padding-bottom: 250px; } }
+  @media screen and (max-width: 480px) {
+    .types_block {
+      padding-bottom: 370px; } }
 
 .types_item {
   background: #fff;
@@ -218,13 +267,35 @@ h3.heading {
     box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75); }
   .types_item:hover .price_item {
     transform: translateY(55%); }
+  @media screen and (max-width: 1125px) {
+    .types_item:hover .price_item {
+      transform: translateY(50%); } }
+  @media screen and (max-width: 992px) {
+    .types_item {
+      width: 48%; }
+      .types_item:hover .price_item {
+        transform: translateY(40%); } }
+  @media screen and (max-width: 768px) {
+    .types_item {
+      width: 100%; } }
 
 .types_img {
   width: 60%;
   height: 60%; }
+  @media screen and (max-width: 768px) {
+    .types_img {
+      width: 50%;
+      height: 50%; } }
+  @media screen and (max-width: 480px) {
+    .types_img {
+      width: 65%;
+      height: 65%; } }
 
 .types_txt {
   margin-top: 30px; }
+  @media screen and (max-width: 768px) {
+    .types_txt {
+      display: none; } }
 
 .types_hg {
   margin-bottom: 50px; }
@@ -246,6 +317,9 @@ h3.heading {
   border: 1px solid yellow;
   text-align: center;
   box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75); }
+  @media screen and (max-width: 768px) {
+    .price_item {
+      height: auto; } }
 
 .price_hg {
   font-size: 2.625rem; }
@@ -279,15 +353,45 @@ h3.heading {
   transform: translateX(-50%);
   margin-bottom: 10px; }
 
+@media screen and (max-width: 992px) {
+  .tt {
+    margin-top: 250px; } }
+@media screen and (max-width: 768px) {
+  .tt {
+    margin-top: 280px; } }
+@media screen and (max-width: 480px) {
+  .tt {
+    margin-top: 300px; } }
+@media screen and (max-width: 400px) {
+  .tt {
+    margin-top: 370px; } }
+
+@media screen and (max-width: 768px) {
+  .ttaf {
+    margin-top: 280px; } }
+@media screen and (max-width: 480px) {
+  .ttaf {
+    margin-top: 300px; } }
+@media screen and (max-width: 400px) {
+  .ttaf {
+    margin-top: 370px; } }
+
 .info {
   background: #fff;
   padding: 70px 4%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .info {
+      flex-wrap: wrap; } }
 
 .info_pic {
   width: 48%; }
+  @media screen and (max-width: 768px) {
+    .info_pic {
+      width: 100%;
+      margin-bottom: 50px; } }
 
 .info_img {
   width: 90%;
@@ -300,9 +404,15 @@ h3.heading {
 .info_block {
   width: 48%;
   background: #fff; }
+  @media screen and (max-width: 768px) {
+    .info_block {
+      width: 100%; } }
 
 .info_hg {
   margin-bottom: 30px; }
+
+.info_txt {
+  line-height: 1.8; }
 
 .slides {
   background: #fff;
@@ -323,6 +433,9 @@ h3.heading {
     .slide_item {
       width: 48%;
       margin-bottom: 30px; } }
+  @media screen and (max-width: 480px) {
+    .slide_item {
+      width: 100%; } }
 
 .slide_hg {
   text-transform: uppercase;
@@ -355,18 +468,23 @@ h3.heading {
   border: 1px solid yellow;
   width: 70%;
   padding: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background: #eee; }
 
 .textarea {
   padding: 10px;
   outline: none;
   width: 70%;
   border-radius: 9px;
-  border: 1px solid yellow; }
+  border: 1px solid yellow;
+  background: #eee; }
 
 .map {
   padding: 10px 70px 10px 0;
   background: yellow; }
+  @media screen and (max-width: 768px) {
+    .map {
+      padding-right: 0; } }
 
 .map_item {
   width: 100%; }
@@ -384,20 +502,36 @@ h3.heading {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .footer_block {
+      display: inline-block; } }
 
 .footer_item {
   text-align: center;
   width: 30%; }
+  @media screen and (max-width: 768px) {
+    .footer_item {
+      width: 100%; } }
 
 .item_link {
   font-size: 2rem; }
 
 .tal {
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .tal {
+      text-align: center; } }
 
 .item_img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   object-fit: cover; }
+  @media screen and (max-width: 768px) {
+    .item_img {
+      width: 40%;
+      height: 40%; } }
+  @media screen and (max-width: 768px) {
+    .item_img {
+      padding: 20px 0; } }
 
 /*# sourceMappingURL=main.css.map */

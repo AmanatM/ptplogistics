@@ -15,10 +15,16 @@
 	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
 	transition: none
 	z-index: 5
+	+m
+		width: 100%
+		height: 70px
 .right
 	position: fixed
 	top: 0
 	right: 140px
+	+m
+		top: 340px
+		right: 0
 .triangle
 	width: 0
 	height: 0
@@ -30,21 +36,38 @@
 	right: 70px
 	transform: translateY(-50%)
 	cursor: pointer
+	+m
+		top: 70px
+		left: 50%
+		transform: translate(-50%, -25%) rotate(-90deg)
 .logo
 	margin-bottom: rem(100px)
+	+m
+		margin-top: rem(100px)
+		margin-bottom: rem(50px)
 .logo_link
 	font-size: rem(32px)
 .logo_img
 	width: 20%
 	height: 20%
 	object-fit: cover
+	+s
+		width: 40%
+		height: 40%
 .head_hg
 	font-size: rem(50px)
 	margin-bottom: rem(40px)
 	width: 70%
+	+m
+		font-size: rem(40px)
+	+s
+		font-size: rem(32px)
+		width: 100%
 .head_txt
 	font-size: rem(22px)
 	margin-bottom: rem(60px)
+	+s
+		font-size: rem(18px)
 .head_link
 	z-index: 1
 	position: relative
@@ -86,6 +109,10 @@
 	top: 0
 	right: 0
 	position: fixed
+	z-index: 5
+	+m
+		width: 100%
+		height: 340px
 .tape_bar
 	height: 100%
 	display: flex
@@ -94,6 +121,8 @@
 	align-items: center
 .tape_list
 	padding: 30px 0
+	+m
+		padding: 15px 0
 .tape_link
 	color: #fff
 .open
