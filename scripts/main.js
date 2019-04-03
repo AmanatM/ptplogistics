@@ -30,7 +30,6 @@ function toggle_menu() {
 
 window.addEventListener('scroll', function() {
 	header_nav.style.position = window.pageYOffset > header.offsetHeight ? 'fixed' : ''; 
-
 });	
 
 
