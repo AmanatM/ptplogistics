@@ -39,13 +39,12 @@ h2.heading {
 div.container {
   width: 90%;
   max-width: 1080px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 h3.heading {
   font-weight: normal; }
 
-  header {
+header {
   background: url("../files/imgs/header-bg.jpg");
   background-size: cover;
   background-position: 60% 50%;
@@ -78,6 +77,8 @@ h3.heading {
     header nav .menu {
       display: flex;
       align-items: center; }
+      header nav .menu .menu-logo {
+        width: 100px; }
       header nav .menu .toogle-btn {
         display: none; }
       @media screen and (max-width: 768px) {
