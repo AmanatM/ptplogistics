@@ -65,7 +65,7 @@ h3.heading {
   @media screen and (max-width: 768px) {
     .tape {
       width: 100%;
-      height: 70px; } }
+      height: 50px; } }
 
 .right {
   position: fixed;
@@ -89,7 +89,7 @@ h3.heading {
   cursor: pointer; }
   @media screen and (max-width: 768px) {
     .triangle {
-      top: 70px;
+      top: 50px;
       left: 50%;
       transform: translate(-50%, -25%) rotate(-90deg); } }
 
@@ -141,6 +141,12 @@ h3.heading {
   .head_link:active {
     background-color: yellow;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 100, 0.5); }
+  @media screen and (max-width: 280px) {
+    .head_link {
+      display: inline-block;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center; } }
 
 .link_ping {
   z-index: -1;
@@ -478,7 +484,8 @@ h3.heading {
   width: 70%;
   border-radius: 9px;
   border: 1px solid yellow;
-  background: #eee; }
+  background: #eee;
+  margin-bottom: 20px; }
 
 .map {
   padding: 10px 70px 10px 0;
@@ -489,6 +496,17 @@ h3.heading {
 
 .map_item {
   width: 100%; }
+
+.feed_sub {
+  border: none;
+  padding: 15px 20px;
+  background: yellow;
+  border-radius: 9px;
+  outline: none;
+  cursor: pointer; }
+  .feed_sub:active {
+    background-color: yellow;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 100, 0.5); }
 
 .footer {
   padding: 50px 4%; }
