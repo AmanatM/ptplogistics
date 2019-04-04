@@ -61,11 +61,12 @@ header {
     margin-bottom: 3.125rem;
     background-color: white;
     color: black;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 999; }
+    z-index: 999;
+    transition: all 0.2s; }
     header nav.active {
       position: fixed;
       top: 0;
