@@ -8,7 +8,7 @@
 .tape
 	width: 70px
 	height: 100%
-	background: linear-gradient(45deg, black 0, black 11%, yellow 11%, yellow 21%, black 21%, black 31%, yellow 31%, yellow 41%, black 41%, black 51%, yellow 51%, yellow 61%, black 61%, black 71%, yellow 71%, yellow 81%, black 81%, black 91%, yellow 91%, yellow 100%)
+	background: #FDD835 
 	position: fixed
 	top: 0
 	right: 0
@@ -30,7 +30,7 @@
 	height: 0
 	border-style: solid
 	border-width: 50px 50px 50px 0
-	border-color: transparent #000000 transparent transparent
+	border-color: transparent #FDD835 transparent transparent
 	position: absolute
 	top: 50%
 	right: 70px
@@ -72,11 +72,11 @@
 	z-index: 1
 	position: relative
 	color: #000
-	background: yellow
+	background: #FDD835
 	padding: 20px 60px
 	border-radius: 30px
 	&:active
-		background-color: yellow
+		background-color: #FDD835
 		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
 	@media screen and (max-width: 280px)
 		display: inline-block
@@ -88,7 +88,7 @@
 	position: absolute
 	top: -17.5px
 	left: -21px
-	background: yellow
+	background: #FDD835
 	display: inline-block
 	border-radius: 30px
 	height: 90px
@@ -106,8 +106,6 @@
 		transform: scale(2.2)
 		opacity: 0
 .tape_menu
-	display: none
-	width: 140px
 	height: 100%
 	background: #000
 	position: absolute
@@ -115,10 +113,13 @@
 	right: 0
 	position: fixed
 	z-index: 5
+	transition: width .8s
 	+m
 		width: 100%
 		height: 340px
 .tape_bar
+	width: 0
+	font-size: 0
 	height: 100%
 	display: flex
 	flex-direction: column
@@ -131,4 +132,14 @@
 .tape_link
 	color: #fff
 .open
-	display: inline-block
+	width: 140px
+	font-size: rem(16px)
+.tape_txt
+	font-size: rem(42px)
+	transform: rotate(90deg) translate(-18%, 97%)
+	position: absolute
+	top: 50%
+	left: 0
+	padding: 10px 30px
+	font-weight: bold
+	color: #000

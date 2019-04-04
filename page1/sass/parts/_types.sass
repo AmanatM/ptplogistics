@@ -4,8 +4,6 @@
 .types_block
 	display: flex
 	justify-content: space-between
-	padding-bottom: 410px
-	border-bottom: 2px solid yellow
 	position: relative
 	+l
 		flex-wrap: wrap
@@ -19,9 +17,6 @@
 	position: relative
 	transition: .5s
 	border-radius: 9px
-	border: 1px solid yellow
-	border-top: 10px solid yellow
-	padding: 20px
 	width: 23%
 	text-align: center
 	cursor: pointer
@@ -41,77 +36,27 @@
 	+m
 		width: 100%
 .types_img
-	width: 60%
-	height: 60%
-	+m
-		width: 50%
-		height: 50%
-	+s
-		width: 65%
-		height: 65%
-.types_txt
-	margin-top: 30px
-	+m
-		display: none
-.types_hg
-	margin-bottom: 50px
-.price
-	margin-top: 40px
-	display: flex
-	justify-content: space-between
-.price_item
-	transform: translateY(40%)
-	background: #fff
-	position: absolute
-	top: 0
-	left: 0
-	border-radius: 9px
 	width: 100%
-	padding: 50px 50px 70px 50px
-	border: 1px solid yellow
-	text-align: center
-	box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.75)
-	+m
-		height: auto
-.price_hg
-	font-size: rem(42px)
-.price_txt
-	padding: 15px
-	text-transform: uppercase
-	border-bottom: 1px solid #000
-.flex_txt
-	display: flex
-	flex-direction: column
-	align-items: center
-.bbn
-	border-bottom: none
-	margin-bottom: 30px
-.price_link
-	padding: 15px
-	background: yellow
+	height: 25vh
 	border-radius: 9px
-	&:active
-		background-color: yellow
-		box-shadow: 0 1px 1px rgba(255,255,255,.5), inset 0 2px 5px rgba(0,0,100,.5)
-.click
-	position: absolute
-	bottom: 0
-	left: 50%
-	transform: translateX(-50%)
-	margin-bottom: 10px
-.tt
-	+l
-		margin-top: 250px
-	+m
-		margin-top: 280px
-	+s
-		margin-top: 300px
-	@media screen and (max-width: 400px)
-		margin-top: 370px
-.ttaf
-	+m
-		margin-top: 280px
-	+s
-		margin-top: 300px
-	@media screen and (max-width: 400px)
-		margin-top: 370px
+	border-bottom-left-radius: 0
+	border-bottom-right-radius: 0
+	object-fit: cover
+.types_hg
+	margin-bottom: 70px
+.types_bottom
+	padding: 30px
+	text-align: left
+.types_head
+	margin: 0px 0 20px 0
+.types_top
+	position: relative
+	&:after
+		content: ''
+		background: #FDD835 
+		opacity: .3
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 98%

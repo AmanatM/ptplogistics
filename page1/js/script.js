@@ -1,5 +1,5 @@
 let btn = document.querySelector('.triangle'),
-	menu = document.querySelector('.tape_menu'),
+	menu = document.querySelector('.tape_bar'),
 	tape = document.querySelector('.tape');
 
 btn.addEventListener('click', function(){
