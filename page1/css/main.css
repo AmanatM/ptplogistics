@@ -45,7 +45,7 @@ h3.heading {
   font-weight: normal; }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background: #fff;
   display: flex;
   align-items: center;
