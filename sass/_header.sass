@@ -4,6 +4,8 @@ header
 	background-position: 60% 50%
 	min-height: 100vh
 	display: flex
+	position: relative
+	z-index: 2
 
 	+m 	
 		padding-top: rem(150px)
@@ -17,7 +19,7 @@ header
 		width: 100%
 		top: 0
 		left: 0
-		z-index: 99
+		z-index: 999
 		transition: all .3s
 
 		&.active 
