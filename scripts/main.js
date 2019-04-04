@@ -50,9 +50,3 @@ window.addEventListener('scroll', function() {
 
 
 
-
-
-
-
-
-
