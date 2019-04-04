@@ -18,8 +18,7 @@
 	transition: all .2s
 	z-index: 9
 	+m
-		width: 100%
-		height: 50px
+		display: none
 .right
 	position: fixed
 	top: 0
@@ -45,8 +44,7 @@
 .logo
 	margin-bottom: rem(100px)
 	+m
-		margin-top: rem(100px)
-		margin-bottom: rem(50px)
+		margin-bottom: rem(150px)
 .logo_link
 	font-size: rem(32px)
 .logo_img
@@ -116,6 +114,7 @@
 	top: 0
 	right: 0
 	position: fixed
+	transition: none
 	z-index: 5
 	+m
 		background: #000
@@ -135,6 +134,7 @@
 		height: 0
 .tape_list
 	padding: 30px 0 30px 20px
+	transition: none
 	+m
 		padding: 15px 0
 .tape_link
@@ -159,3 +159,37 @@
 		transform: rotate(0) translate(-50%, -50%)
 		left: 50%
 		display: none
+.tape:hover .tape_bar
+		width: 140px
+		font-size: rem(16px)
+.tape:hover
+		right: 140px
++m
+	.hamburger
+		position: absolute
+		top: 15%
+		right: 10%
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		background: transparent
+		width: 50px
+		height: 41px
+		padding: 0 8px
+		cursor: pointer
+	.hamburger__line
+		background: #fff
+		width: 100%
+		height: 2px
+		transition: .1s
+.active 
+	.hamburger__line 							
+		background-color: white
+		&:nth-child(1)
+			transform-origin: 0 100%
+			transform: rotate(45deg) translate(4px, -3px)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform-origin: 0% 100%
+			transform: rotate(-45deg) translate(5px, 3px)

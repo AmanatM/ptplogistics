@@ -39,12 +39,13 @@ h2.heading {
 div.container {
   width: 90%;
   max-width: 1080px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 h3.heading {
   font-weight: normal; }
 
-header {
+  header {
   background: url("../files/imgs/header-bg.jpg");
   background-size: cover;
   background-position: 60% 50%;

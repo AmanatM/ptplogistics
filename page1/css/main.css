@@ -66,8 +66,7 @@ h3.heading {
   z-index: 9; }
   @media screen and (max-width: 768px) {
     .tape {
-      width: 100%;
-      height: 50px; } }
+      display: none; } }
 
 .right {
   position: fixed;
@@ -99,8 +98,7 @@ h3.heading {
   margin-bottom: 6.25rem; }
   @media screen and (max-width: 768px) {
     .logo {
-      margin-top: 6.25rem;
-      margin-bottom: 3.125rem; } }
+      margin-bottom: 9.375rem; } }
 
 .logo_link {
   font-size: 2rem; }
@@ -213,6 +211,7 @@ h3.heading {
   top: 0;
   right: 0;
   position: fixed;
+  transition: none;
   z-index: 5; }
   @media screen and (max-width: 768px) {
     .tape_menu {
@@ -235,7 +234,8 @@ h3.heading {
       height: 0; } }
 
 .tape_list {
-  padding: 30px 0 30px 20px; }
+  padding: 30px 0 30px 20px;
+  transition: none; }
   @media screen and (max-width: 768px) {
     .tape_list {
       padding: 15px 0; } }
@@ -266,6 +266,43 @@ h3.heading {
       transform: rotate(0) translate(-50%, -50%);
       left: 50%;
       display: none; } }
+
+.tape:hover .tape_bar {
+  width: 140px;
+  font-size: 1rem; }
+
+.tape:hover {
+  right: 140px; }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    width: 50px;
+    height: 41px;
+    padding: 0 8px;
+    cursor: pointer; }
+
+  .hamburger__line {
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    transition: 0.1s; } }
+.active .hamburger__line {
+  background-color: white; }
+  .active .hamburger__line:nth-child(1) {
+    transform-origin: 0 100%;
+    transform: rotate(45deg) translate(4px, -3px); }
+  .active .hamburger__line:nth-child(2) {
+    opacity: 0; }
+  .active .hamburger__line:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) translate(5px, 3px); }
 
 .types {
   padding: 70px 4% 0 4%;
