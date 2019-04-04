@@ -95,7 +95,7 @@ h3.heading {
       transform: translate(-50%, -25%) rotate(-90deg); } }
 
 .logo {
-  margin-bottom: 6.25rem; }
+  margin-bottom: 3.125rem; }
   @media screen and (max-width: 768px) {
     .logo {
       margin-bottom: 9.375rem; } }
