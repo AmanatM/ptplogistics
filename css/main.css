@@ -253,6 +253,7 @@ section.about {
             height: 36px;
             position: absolute;
             bottom: 10px;
+            left: 0;
             transform: rotate(-90deg);
             transform-origin: 48% 50%; }
           section.about div.content div.features .feature-item img.quality-anim {
