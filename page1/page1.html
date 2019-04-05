@@ -28,55 +28,20 @@
 				<nav class="tape_menu">
 					<ul class="tape_bar">
 						<li class="tape_list"><a href="#header" class="tape_link">Главная</a></li>
-						<li class="tape_list"><a href="#types" class="tape_link">Цены</a></li>
 						<li class="tape_list"><a href="#info" class="tape_link">Гарантии</a></li>
-						<li class="tape_list"><a href="#feedback" class="tape_link">Связь</a></li>
 						<li class="tape_list"><a href="#footer" class="tape_link">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</div>
-	<div class="types" id="types">
-		<div class="container">
-			<h2 class="types_hg">Виды перевозок</h2>
-			<div class="types_block">
-				<div class="types_item">
-					<div class="types_top">
-						<img src="img/type-plane.jpg" alt="" class="types_img">
-					</div>
-					<div class="types_bottom">
-						<h2 class="types_head">Avia</h2>
-						<p class="types_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae quibusdam</p>
-					</div>
-				</div>
-				<div class="types_item">
-					<div class="types_top">
-						<img src="img/type-cargo.jpg" alt="" class="types_img">
-					</div>
-					<div class="types_bottom">
-						<h2 class="types_head">Avia</h2>
-						<p class="types_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae quibusdam</p>
-					</div>
-				</div>
-				<div class="types_item">
-					<div class="types_top">
-						<img src="img/type-ship.jpg" alt="" class="types_img">
-					</div>
-					<div class="types_bottom">
-						<h2 class="types_head">Avia</h2>
-						<p class="types_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae quibusdam</p>
-					</div>
-				</div>
-				<div class="types_item">
-					<div class="types_top">
-						<img src="img/type-train.jpg" alt="" class="types_img">
-					</div>
-					<div class="types_bottom">
-						<h2 class="types_head">Avia</h2>
-						<p class="types_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae quibusdam</p>
-					</div>
-				</div>
+	<div class="container">
+		<div id="clock" class="dark">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
 			</div>
 		</div>
 	</div>
@@ -122,22 +87,8 @@
 			</div>			
 		</div>
 	</div>
-
-	<div class="feedback" id="feedback">
-		<div class="container">
-			<h2 class="feed_hg">Оставьте заявку</h2>
-			<form class="form" action="submit.php" method="POST" name="form">
-				<input type="text" class="feed_row" placeholder="Имя" name="name">
-				<input type="number" class="feed_row" placeholder="Телефон" name="phone">
-				<input type="email" class="feed_row" placeholder="Почта" name="email">
-				<textarea cols="0" rows="5" class="textarea" placeholder="Сообщение" name="message"></textarea>
-				<input type="submit" class="feed_sub" value="Отправить">
-			</form>
-		</div>
-	</div>
-	
 	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11704.523195888194!2d74.6107513!3d42.8278508!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1553935708059!5m2!1sru!2skg" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map_item"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d850.6701184332278!2d74.59440063844647!3d42.87377065596322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1554414734737!5m2!1sru!2skg" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map_item"></iframe>
 	</div>
 	<footer id="footer">
 			<div class="container">
@@ -180,6 +131,8 @@
 				<a rel="noopener" href=""><div class="citrus-logo"> <img src="../files/imgs/icons/citrus.svg" alt=""><b>CITRUS</b></div></a>
 			</div>
 		</footer>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

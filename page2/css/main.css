@@ -398,7 +398,7 @@ h3.heading {
       margin-bottom: 50px; } }
 
 .info_img {
-  width: 90%;
+  width: 100%;
   height: 90%;
   object-fit: cover;
   border: 1px solid #FDD835;
@@ -457,56 +457,6 @@ h3.heading {
   padding: 5px;
   margin-bottom: 30px; }
 
-.feedback {
-  padding: 70px 4% 70px 4%;
-  background: #3C3C42; }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-  border-radius: 12px; }
-
-.feed_hg {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 50px; }
-
-.feed_row {
-  outline: none;
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding: 10px 20px;
-  background: #3C3C42;
-  font-size: 1.375rem;
-  color: #fff; }
-  .feed_row::placeholder {
-    color: #fff; }
-  @media screen and (max-width: 768px) {
-    .feed_row {
-      width: 100%; } }
-
-.textarea {
-  outline: none;
-  width: 70%;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding: 10px 20px;
-  margin-bottom: 40px;
-  background: #3C3C42;
-  font-size: 1.375rem;
-  color: #fff; }
-  .textarea::placeholder {
-    font-family: "Arial";
-    color: #fff; }
-  @media screen and (max-width: 768px) {
-    .textarea {
-      width: 100%; } }
-
 .map {
   padding: 10px 70px 10px 0;
   background: #FDD835; }
@@ -529,11 +479,6 @@ h3.heading {
   .feed_sub:active {
     background-color: #FDD835;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 100, 0.5); }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0; }
 
 footer {
   background-color: #F9F9F9;
