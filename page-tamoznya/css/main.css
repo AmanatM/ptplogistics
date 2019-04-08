@@ -331,7 +331,7 @@ h3.heading {
   padding: 40px 20px 20px;
   border-radius: 6px;
   position: relative;
-  height: 20vh; }
+  height: 150px; }
 
 #clock.dark {
   background-color: #272e38;
@@ -351,6 +351,12 @@ h3.heading {
   width: 50%;
   background-color: #0f1620;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset, 0 1px 1px #2d3642; }
+  @media screen and (max-width: 768px) {
+    #clock.dark .display {
+      width: 90%; } }
+  @media screen and (max-width: 480px) {
+    #clock.dark .display {
+      display: none; } }
 
 #clock.dark .digits div.dots:before,
 #clock.dark .digits div.dots:after {
