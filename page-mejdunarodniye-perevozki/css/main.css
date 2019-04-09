@@ -93,14 +93,13 @@ h3.heading {
       border-color: transparent transparent transparent transparent; } }
 
 .logo {
-  margin-bottom: 3.125rem; }
+  margin-bottom: 0; }
 
 .logo_link {
   font-size: 2rem; }
 
 .logo_img {
-  width: 20%;
-  height: 20%;
+  width: 18%;
   object-fit: cover; }
   @media screen and (max-width: 480px) {
     .logo_img {
@@ -112,7 +111,7 @@ h3.heading {
   font-size: 3.125rem;
   margin-bottom: 2.5rem;
   width: 70%;
-  margin-top: 8.125rem; }
+  margin-top: 3.125rem; }
   @media screen and (max-width: 768px) {
     .head_hg {
       font-size: 2.5rem; } }
