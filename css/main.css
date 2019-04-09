@@ -364,13 +364,14 @@ section.reviews {
         display: flex;
         align-items: center; }
         section.reviews .review-items .review-item .author-info .left {
-          border-radius: 50%;
-          border: 1px solid grey;
-          width: 48px;
-          margin-right: 1.25rem;
-          height: 48px;
-          background: url("../files/imgs/icons/review-avatar.jpg");
-          background-size: cover; }
+          width: 70px;
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 1.25rem; }
+          section.reviews .review-items .review-item .author-info .left img {
+            max-width: 80%; }
         section.reviews .review-items .review-item .author-info small {
           color: #838383; }
 
