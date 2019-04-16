@@ -382,8 +382,6 @@ section.reviews {
 section.action {
   color: white;
   padding: 3.75rem;
-  position: relative;
-  z-index: -1;
   background: url("../files/imgs/icons/truck-icon.svg"), url("../files/imgs/icons/road_texture.png");
   background-color: #049588;
   background-position: 15% 30%, 15% 30%;
@@ -405,6 +403,8 @@ section.action {
         margin-left: 0; } }
     section.action h2.title {
       margin-bottom: 1.875rem; }
+    section.action h2.number {
+      text-decoration: underline; }
 
 footer {
   background-color: #F9F9F9;
