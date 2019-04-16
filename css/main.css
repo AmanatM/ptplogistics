@@ -137,7 +137,11 @@ header {
                 margin: 0.625rem 0;
                 font-weight: bold; } }
   header div.blocks-container {
-    display: flex; }
+    display: flex;
+    padding-top: 100px; }
+    @media screen and (max-width: 768px) {
+      header div.blocks-container {
+        padding-top: 0; } }
     header div.blocks-container div.blocks {
       display: flex;
       flex-wrap: wrap;
