@@ -2,7 +2,8 @@ let d = document;
 const toggle_btn = d.getElementById('toggle-btn'),
 	  menu = d.querySelector('.nav-items'),
 	  header_nav = d.getElementById('header-nav'),
-	  header = d.querySelector('header');
+	  header = d.querySelector('header'),
+	  logo = d.querySelector('.menu_img');
 
 
 
@@ -27,7 +28,9 @@ function toggle_menu() {
 
 
 window.addEventListener('scroll', function() {
-	header_nav.style.padding = window.pageYOffset > (header.offsetHeight) ? '15px 0' : ''; 
+	header_nav.style.padding = window.pageYOffset > (header.offsetHeight) ? '15px 0' : '';
+	logo.style.width = window.pageYOffset > (header.offsetHeight) ? '60px' : '';
+	logo.style.height = window.pageYOffset > (header.offsetHeight) ? '60px' : '';  
 });	
 
 
