@@ -46,7 +46,6 @@ h3.heading {
 
 .header {
   min-height: 100vh;
-  background: #fff;
   display: flex;
   align-items: center;
   text-align: left;
@@ -100,6 +99,7 @@ h3.heading {
 
 .logo_img {
   width: 18%;
+  height: 20%;
   object-fit: cover; }
   @media screen and (max-width: 480px) {
     .logo_img {
@@ -200,13 +200,14 @@ h3.heading {
     transform: scale(2.2);
     opacity: 0; } }
 .tape_menu {
+  width: 0;
   height: 100%;
   background: #000;
   position: absolute;
   top: 0;
   right: 0;
   position: fixed;
-  transition: none;
+  transition: all 0.2s;
   z-index: 5; }
   @media screen and (max-width: 768px) {
     .tape_menu {
@@ -263,6 +264,9 @@ h3.heading {
   width: 140px;
   font-size: 1rem; }
 
+.tape:hover .tape_menu {
+  width: 140px; }
+
 .tape:hover {
   right: 140px; }
 
@@ -298,7 +302,7 @@ h3.heading {
       opacity: 0; }
     .active .hamburger__line:nth-child(3) {
       transform-origin: 0% 100%;
-      transform: rotate(-45deg) translate(6px, 3px); } }
+      transform: rotate(-45deg) translate(7px, 2px); } }
 .hamburger.active {
   box-shadow: none;
   background: transparent !important;

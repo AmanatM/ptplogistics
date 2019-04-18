@@ -104,13 +104,14 @@
 		transform: scale(2.2)
 		opacity: 0
 .tape_menu
+	width: 0
 	height: 100%
 	background: #000
 	position: absolute
 	top: 0
 	right: 0
 	position: fixed
-	transition: none
+	transition: all .2s
 	z-index: 5
 	+m
 		background: rgba(0, 0, 0, .7)
@@ -152,9 +153,11 @@
 		transform: rotate(0) translate(-50%, -50%)
 		left: 50%
 		display: none
-.tape:hover .tape_bar
+.tape:hover .tape_bar 
 		width: 140px
 		font-size: rem(16px)
+.tape:hover .tape_menu 
+		width: 140px
 .tape:hover
 		right: 140px
 +m
@@ -188,7 +191,7 @@
 				opacity: 0
 			&:nth-child(3)
 				transform-origin: 0% 100%
-				transform: rotate(-45deg) translate(6px, 3px)
+				transform: rotate(-45deg) translate(7px, 2px)
 .hamburger.active
 	box-shadow: none
 	background: transparent !important
